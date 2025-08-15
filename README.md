@@ -22,7 +22,7 @@ It manages books, members, employees, branches, issue/return tracking, and renta
 | **branch**       | Library branch details, including manager info |
 
 
-Key SQL Features
+## 🗂 Key SQL Features
 1️⃣ CRUD Operations
 
 Create: Add new books, members, employees
@@ -67,6 +67,4 @@ Date Functions: Recent issues, overdue returns, seasonal trends
 
 Joins: Combine tables for richer insights
 
-    employees ||--o{ issued_status : "handles"
-    branch ||--o{ employees : "employs"
-
+  
