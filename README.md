@@ -35,36 +35,37 @@ It manages books, members, employees, branches, issue/return tracking, and renta
 
 2️⃣ Business Queries
 
-Top 3 employees by books issued
 
-Members who issued >3 books
+🔸 Top 3 employees by books issued
 
-Total rental income by category
+🔸 Members who issued >3 books
 
-Books never issued
+🔸 Total rental income by category
 
-Overdue books & days overdue
+🔸 Books never issued
 
-Branch performance metrics
+🔸 Overdue books & days overdue
 
-Average salary per branch
+🔸 Branch performance metrics
+
+🔸 Average salary per branch
 
 3️⃣ Analytical Tables (CTAS)
 
-book_issued_cnt – Times each book was issued
+🔸 book_issued_cnt – Times each book was issued
 
-expensive_books – Books above average price
+🔸 expensive_books – Books above average price
 
-active_members – Members active in the last 2 months
+🔸 active_members – Members active in the last 2 months
 
 4️⃣ Advanced SQL
 
-Window Functions: Avg salary comparison by branch
+🔸 Window Functions: Avg salary comparison by branch
 
-CTEs: Employees with above-average salaries
+🔸 CTEs: Employees with above-average salaries
 
-Date Functions: Recent issues, overdue returns, seasonal trends
+🔸 Date Functions: Recent issues, overdue returns, seasonal trends
 
-Joins: Combine tables for richer insights
+🔸 Joins: Combine tables for richer insights
 
   
