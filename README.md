@@ -76,7 +76,7 @@ FROM employees e
 JOIN issued_status i ON e.employee_id = i.employee_id
 GROUP BY e.employee_id, e.name
 ORDER BY total_issued DESC
-LIMIT 3;
+LIMIT 3 ;
 
 2️⃣ Members who issued more than 3 books
 ```sql
