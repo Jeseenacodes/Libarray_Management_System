@@ -24,9 +24,13 @@ It manages books, members, employees, branches, issue/return tracking, and renta
 
 ## 🗂 Key SQL Features
 1️⃣ CRUD Operations
+
 🔸 Create: Add new books, members, employees
+
 🔸 Read: Retrieve with filters, sorting, aggregation
+
 🔸 Update: Modify member addresses, book statuses, etc.
+
 🔸 Delete: Remove outdated records or issue entries
 
 2️⃣ Business Queries
