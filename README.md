@@ -1,4 +1,4 @@
-# Libarray_Management_System
+# Library Management System
 
 
 [![SQL](https://img.shields.io/badge/SQL-PostgreSQL-blue)](https://www.postgresql.org/)
