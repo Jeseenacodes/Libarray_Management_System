@@ -69,38 +69,38 @@ It manages books, members, employees, branches, issue/return tracking, and renta
 🔸 Joins: Combine tables for richer insights
 
 ### Example SQL Queries
-1️⃣ Top 3 employees who issued the most books
+** 1️⃣ Top 3 employees who issued the most books
 ```sql
 SELECT e.employee_id, e.name, COUNT(i.issue_id) AS total_issued
 FROM employees e
 JOIN issued_status i ON e.employee_id = i.employee_id
 GROUP BY e.employee_id, e.name
 ORDER BY total_issued DESC
-LIMIT 3 ;
+LIMIT 3; ```
 
-2️⃣ Members who issued more than 3 books
+** 2️⃣ Members who issued more than 3 books
 ```sql
 SELECT m.member_id, m.name, COUNT(i.issue_id) AS books_issued
 FROM members m
 JOIN issued_status i ON m.member_id = i.member_id
 GROUP BY m.member_id, m.name
-HAVING COUNT(i.issue_id) > 3;
+HAVING COUNT(i.issue_id) > 3; ```
 
-3️⃣ Total rental income by category
+** 3️⃣ Total rental income by category
 ```sql
 SELECT b.category, SUM(b.price) AS total_income
 FROM books b
 JOIN issued_status i ON b.ISBN = i.ISBN
 JOIN return_status r ON i.issue_id = r.issue_id
 GROUP BY b.category
-ORDER BY total_income DESC;
+ORDER BY total_income DESC; ```
 
-4️⃣ Books never issued
+** 4️⃣ Books never issued
 ```sql
 SELECT b.ISBN, b.title
 FROM books b
 LEFT JOIN issued_status i ON b.ISBN = i.ISBN
-WHERE i.issue_id IS NULL;
+WHERE i.issue_id IS NULL; ```
 
 ## Learning Outcomes
 
@@ -116,15 +116,13 @@ WHERE i.issue_id IS NULL;
 
 ### Use Cases
 
-- Library operations tracking
+- Hospital Management System
 
-- Rental revenue reporting
+- Hotel Reservation System
 
-- Staff performance evaluation
+- Student performance evaluation
 
-- Late return penalties
-
-- Inventory & demand analysis
+- Car Rental System
 
 ### Tech Stack
 
