@@ -67,7 +67,7 @@ It manages books, members, employees, branches, issue/return tracking, and renta
 🔸 Date Functions: Recent issues, overdue returns, seasonal trends
 
 🔸 Joins: Combine tables for richer insights
----
+
 ### Example SQL Queries
  1️⃣ Top 3 employees who issued the most books
 ```sql
