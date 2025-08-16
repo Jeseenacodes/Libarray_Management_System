@@ -1,4 +1,4 @@
-# Library Management System
+<img width="2549" height="890" alt="LMS ERdiagram" src="https://github.com/user-attachments/assets/5db9b2ba-63e2-4dc9-ae58-c56f0cb72bf6" /># Library Management System
 
 
 [![Data Analytics](https://img.shields.io/badge/Data_Analytics-Professional-orange)](https://www.coursera.org/professional-certificates/google-data-analytics)
@@ -21,6 +21,10 @@ It manages books, members, employees, branches, issue/return tracking, and renta
 | **return_status**| Tracks returned books and return dates |
 | **employees**    | Employee details (position, salary, branch) |
 | **branch**       | Library branch details, including manager info |
+
+## **ER Diagram**
+*(<img width="2549" height="890" alt="LMS ERdiagram" src="https://github.com/user-attachments/assets/1659785a-fae4-4e2c-b2cf-9bfbb3ec60fb" />
+)*  
 
 ## 🗂 Key SQL Features
 1️⃣ CRUD Operations
