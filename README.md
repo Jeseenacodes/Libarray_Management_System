@@ -26,6 +26,79 @@ It manages books, members, employees, branches, issue/return tracking, and renta
 *(<img width="2549" height="890" alt="LMS ERdiagram" src="https://github.com/user-attachments/assets/1659785a-fae4-4e2c-b2cf-9bfbb3ec60fb" />
 )*  
 
+erDiagram
+    books {
+        string isbn PK
+        string book_title
+        string category
+        float rental_price
+        string status
+        string author
+        string publisher
+    }
+
+    issued_status {
+        int issued_id PK
+        int issued_member_id FK
+        string issued_book_name
+        string issued_date
+        string issued_book_isbn FK
+        int issued_emp_id FK
+    }
+
+    return_status {
+        int return_id PK
+        int issued_id FK
+        string return_book_name
+        string return_date
+        string return_book_isbn
+    }
+
+    employees {
+        int emp_id PK
+        string emp_name
+        string position
+        float salary
+        int branch_id FK
+    }
+
+    members {
+        int member_id PK
+        string member_name
+        string member_address
+        string reg_date
+    }
+
+    branch {
+        int branch_id PK
+        int manager_id
+        string branch_address
+        string contact_no
+    }
+
+    book_issued_cnt {
+        string isbn PK
+        string book_title
+        int issue_count
+    }
+
+    expensive_books {
+        string isbn
+        string book_title
+        string category
+        float rental_price
+        string status
+        string author
+        string publisher
+    }
+
+    books ||--o{ issued_status : "has"
+    members ||--o{ issued_status : "issues"
+    employees ||--o{ issued_status : "handles"
+    issued_status ||--o{ return_status : "returns"
+    employees ||--o{ branch : "works_at"
+    branch ||--|| employees : "managed_by"
+
 ## 🗂 Key SQL Features
 1️⃣ CRUD Operations
 ## Key Findings and Insights
