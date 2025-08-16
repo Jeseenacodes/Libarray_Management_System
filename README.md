@@ -25,6 +25,7 @@ It manages books, members, employees, branches, issue/return tracking, and renta
 ## **ER Diagram**
 *<img width="2549" height="890" alt="LMS ERdiagram" src="https://github.com/user-attachments/assets/1659785a-fae4-4e2c-b2cf-9bfbb3ec60fb" />*  
 
+## **ER Diagram**
 erDiagram
     BOOKS {
         string isbn PK
