@@ -106,7 +106,7 @@ WHERE i.issue_id IS NULL;
 
 - Gain confidence in SQL for data analysis
 
-### 🗂 Use Cases
+## 🗂 Use Cases
 - Hospital Management System
 
 - Hotel Reservation System
@@ -115,7 +115,7 @@ WHERE i.issue_id IS NULL;
 
 - Car Rental System
 
-### 🗂 Tech Stack
+## 🗂 Tech Stack
 - SQL (PostgreSQL / MySQL / SQL Server compatible)
 
 - Relational Database Design
