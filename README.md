@@ -78,17 +78,12 @@ GROUP BY e.employee_id, e.name
 ORDER BY total_issued DESC
 LIMIT 3;
 
----
-
  2️⃣ Members who issued more than 3 books
-```sql
 SELECT m.member_id, m.name, COUNT(i.issue_id) AS books_issued
 FROM members m
 JOIN issued_status i ON m.member_id = i.member_id
 GROUP BY m.member_id, m.name
 HAVING COUNT(i.issue_id) > 3; ```
-
----
 
 3️⃣ Total rental income by category
 
@@ -99,17 +94,12 @@ JOIN return_status r ON i.issue_id = r.issue_id
 GROUP BY b.category
 ORDER BY total_income DESC; ```
 
----
-
 4️⃣ Books never issued
 SELECT b.ISBN, b.title
 FROM books b
 LEFT JOIN issued_status i ON b.ISBN = i.ISBN
 WHERE i.issue_id IS NULL; ```
 
-
-
----
 ## Learning Outcomes
 
 - Understand database schema design for a library system
