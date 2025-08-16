@@ -23,7 +23,7 @@ It manages books, members, employees, branches, issue/return tracking, and renta
 | **branch**       | Library branch details, including manager info |
 
 ## **ER Diagram**
-*<img width="2549" height="890" alt="LMS ERdiagram" src="https://github.com/user-attachments/assets/1659785a-fae4-4e2c-b2cf-9bfbb3ec60fb" />*  
+*<img width="2647" height="3840" alt="Library Management System ER Diagram" src="https://github.com/user-attachments/assets/7e6a5ad3-e2e6-4f54-b84c-9d49b5b83d20" />*  
 
 ## **ER Diagram**
 erDiagram
