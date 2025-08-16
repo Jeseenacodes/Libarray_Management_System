@@ -83,7 +83,7 @@ SELECT m.member_id, m.name, COUNT(i.issue_id) AS books_issued
 FROM members m
 JOIN issued_status i ON m.member_id = i.member_id
 GROUP BY m.member_id, m.name
-HAVING COUNT(i.issue_id) > 3; ```
+HAVING COUNT(i.issue_id) > 3;
 
 3️⃣ Total rental income by category
 
@@ -92,15 +92,15 @@ FROM books b
 JOIN issued_status i ON b.ISBN = i.ISBN
 JOIN return_status r ON i.issue_id = r.issue_id
 GROUP BY b.category
-ORDER BY total_income DESC; ```
+ORDER BY total_income DESC; 
 
 4️⃣ Books never issued
 SELECT b.ISBN, b.title
 FROM books b
 LEFT JOIN issued_status i ON b.ISBN = i.ISBN
-WHERE i.issue_id IS NULL; ```
+WHERE i.issue_id IS NULL; 
 
-## Learning Outcomes
+##🗂 Learning Outcomes
 
 - Understand database schema design for a library system
 
@@ -112,7 +112,7 @@ WHERE i.issue_id IS NULL; ```
 
 - Gain confidence in SQL for data analysis
 
-### Use Cases
+###🗂 Use Cases
 
 - Hospital Management System
 
@@ -122,7 +122,7 @@ WHERE i.issue_id IS NULL; ```
 
 - Car Rental System
 
-### Tech Stack
+###🗂 Tech Stack
 
 - SQL (PostgreSQL / MySQL / SQL Server compatible)
 
