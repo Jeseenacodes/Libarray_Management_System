@@ -23,7 +23,6 @@ It manages books, members, employees, branches, issue/return tracking, and renta
 
 ## 🗂 Key SQL Features
 1️⃣ CRUD Operations
-
 🔸 Create: Add new books, members, employees
 
 🔸 Read: Retrieve with filters, sorting, aggregation
@@ -33,8 +32,6 @@ It manages books, members, employees, branches, issue/return tracking, and renta
 🔸 Delete: Remove outdated records or issue entries
 
 2️⃣ Business Queries
-
-
 🔸 Top 3 employees by books issued
 
 🔸 Members who issued >3 books
@@ -50,7 +47,6 @@ It manages books, members, employees, branches, issue/return tracking, and renta
 🔸 Average salary per branch
 
 3️⃣ Analytical Tables (CTAS)
-
 🔸 book_issued_cnt – Times each book was issued
 
 🔸 expensive_books – Books above average price
@@ -58,7 +54,6 @@ It manages books, members, employees, branches, issue/return tracking, and renta
 🔸 active_members – Members active in the last 2 months
 
 4️⃣ Advanced SQL
-
 🔸 Window Functions: Avg salary comparison by branch
 
 🔸 CTEs: Employees with above-average salaries
@@ -101,7 +96,6 @@ WHERE i.issue_id IS NULL;
 ```
 
 ## 🗂 Learning Outcomes
-
 - Understand database schema design for a library system
 
 - Write efficient SQL queries for real-world problems
@@ -113,7 +107,6 @@ WHERE i.issue_id IS NULL;
 - Gain confidence in SQL for data analysis
 
 ### 🗂 Use Cases
-
 - Hospital Management System
 
 - Hotel Reservation System
@@ -123,7 +116,6 @@ WHERE i.issue_id IS NULL;
 - Car Rental System
 
 ### 🗂 Tech Stack
-
 - SQL (PostgreSQL / MySQL / SQL Server compatible)
 
 - Relational Database Design
