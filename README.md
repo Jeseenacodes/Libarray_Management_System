@@ -21,7 +21,6 @@ It manages books, members, employees, branches, issue/return tracking, and renta
 | **employees**    | Employee details (position, salary, branch) |
 | **branch**       | Library branch details, including manager info |
 
-
 ## 🗂 Key SQL Features
 1️⃣ CRUD Operations
 
@@ -101,7 +100,7 @@ LEFT JOIN issued_status i ON b.ISBN = i.ISBN
 WHERE i.issue_id IS NULL; 
 ```
 
-##🗂 Learning Outcomes
+## 🗂 Learning Outcomes
 
 - Understand database schema design for a library system
 
@@ -113,7 +112,7 @@ WHERE i.issue_id IS NULL;
 
 - Gain confidence in SQL for data analysis
 
-###🗂 Use Cases
+### 🗂 Use Cases
 
 - Hospital Management System
 
@@ -123,7 +122,7 @@ WHERE i.issue_id IS NULL;
 
 - Car Rental System
 
-###🗂 Tech Stack
+### 🗂 Tech Stack
 
 - SQL (PostgreSQL / MySQL / SQL Server compatible)
 
