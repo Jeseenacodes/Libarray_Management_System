@@ -23,8 +23,83 @@ It manages books, members, employees, branches, issue/return tracking, and renta
 | **branch**       | Library branch details, including manager info |
 
 ## **ER Diagram**
-*(<img width="2549" height="890" alt="LMS ERdiagram" src="https://github.com/user-attachments/assets/1659785a-fae4-4e2c-b2cf-9bfbb3ec60fb" />
-)*  
+*<img width="2549" height="890" alt="LMS ERdiagram" src="https://github.com/user-attachments/assets/1659785a-fae4-4e2c-b2cf-9bfbb3ec60fb" />*  
+
+erDiagram
+    BOOKS {
+        string isbn PK
+        string book_title
+        string category
+        float rental_price
+        string status
+        string author
+        string publisher
+    }
+
+    ISSUED_STATUS {
+        int issued_id PK
+        int issued_member_id FK
+        string issued_book_name
+        string issued_date
+        string issued_book_isbn FK
+        int issued_emp_id FK
+    }
+
+    RETURN_STATUS {
+        int return_id PK
+        int issued_id FK
+        string return_book_name
+        string return_date
+        string return_book_isbn
+    }
+
+    EMPLOYEES {
+        int emp_id PK
+        string emp_name
+        string position
+        float salary
+        int branch_id FK
+    }
+
+    MEMBERS {
+        int member_id PK
+        string member_name
+        string member_address
+        string reg_date
+    }
+
+    BRANCH {
+        int branch_id PK
+        int manager_id
+        string branch_address
+        string contact_no
+    }
+
+    BOOK_ISSUED_CNT {
+        string isbn PK
+        string book_title
+        int issue_count
+    }
+
+    EXPENSIVE_BOOKS {
+        string isbn
+        string book_title
+        string category
+        float rental_price
+        string status
+        string author
+        string publisher
+    }
+
+    BOOKS ||--o{ ISSUED_STATUS : "has"
+    MEMBERS ||--o{ ISSUED_STATUS : "issues"
+    EMPLOYEES ||--o{ ISSUED_STATUS : "handles"
+    ISSUED_STATUS ||--o{ RETURN_STATUS : "returns"
+    EMPLOYEES ||--o{ BRANCH : "works_at"
+    BRANCH ||--|| EMPLOYEES : "managed_by"
+---
+
+
 
 ## 🗂 Key SQL Features
 1️⃣ CRUD Operations
