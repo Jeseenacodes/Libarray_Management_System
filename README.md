@@ -1,6 +1,3 @@
-<img width="2549" height="890" alt="LMS ERdiagram" src="https://github.com/user-attachments/assets/5db9b2ba-63e2-4dc9-ae58-c56f0cb72bf6" /># Library Management System
-
-
 [![Data Analytics](https://img.shields.io/badge/Data_Analytics-Professional-orange)](https://www.coursera.org/professional-certificates/google-data-analytics)
 [![SQL](https://img.shields.io/badge/SQL-PostgreSQL-blue)](https://www.postgresql.org/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
