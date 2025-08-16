@@ -99,7 +99,7 @@ SELECT b.ISBN, b.title
 FROM books b
 LEFT JOIN issued_status i ON b.ISBN = i.ISBN
 WHERE i.issue_id IS NULL; 
-```sql
+```
 
 ##🗂 Learning Outcomes
 
