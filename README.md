@@ -180,3 +180,9 @@ WHERE i.issue_id IS NULL;
 - SQL (PostgreSQL / MySQL / SQL Server compatible)
 - Relational Database Design
 - Analytical & Reporting Queries
+
+## 🗂  Contact
+Author: Jeseena Parveen K
+Data Analyst Trainee
+LinkedIn: https://www.linkedin.com/in/jeseena-parveen-k
+
