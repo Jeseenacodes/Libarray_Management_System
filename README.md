@@ -91,7 +91,7 @@ HAVING COUNT(i.issue_id) > 3; ```
 ---
 
 3️⃣ Total rental income by category
-```sql
+
 SELECT b.category, SUM(b.price) AS total_income
 FROM books b
 JOIN issued_status i ON b.ISBN = i.ISBN
@@ -102,11 +102,11 @@ ORDER BY total_income DESC; ```
 ---
 
 4️⃣ Books never issued
-```sql
 SELECT b.ISBN, b.title
 FROM books b
 LEFT JOIN issued_status i ON b.ISBN = i.ISBN
 WHERE i.issue_id IS NULL; ```
+
 
 
 ---
