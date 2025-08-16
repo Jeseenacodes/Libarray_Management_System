@@ -87,27 +87,18 @@ WHERE i.issue_id IS NULL;
 
 ## 🗂 Learning Outcomes
 - Understand database schema design for a library system
-
 - Write efficient SQL queries for real-world problems
-
 - Use aggregate, analytical, and date functions
-
 - Create reports for business decision-making
-
 - Gain confidence in SQL for data analysis
 
 ## 🗂 Use Cases
 - Hospital Management System
-
 - Hotel Reservation System
-
 - Student performance evaluation
-
 - Car Rental System
 
 ## 🗂 Tech Stack
 - SQL (PostgreSQL / MySQL / SQL Server compatible)
-
 - Relational Database Design
-
 - Analytical & Reporting Queries
