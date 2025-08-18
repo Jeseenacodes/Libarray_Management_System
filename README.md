@@ -101,7 +101,6 @@ erDiagram
 
 ## 🗂 Key SQL Features
 1️⃣ CRUD Operations
-## Key Findings and Insights
 - Create: Add new books, members, employees
 - Read: Retrieve with filters, sorting, aggregation
 - Update: Modify member addresses, book statuses, etc.
