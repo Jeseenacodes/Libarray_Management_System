@@ -4,7 +4,7 @@
 [![Status](https://img.shields.io/badge/status-Completed-success)]()
 
 A **Library Management System** built entirely with **SQL** to simulate and analyze library operations.  
-It manages books, members, employees, branches, issue/return tracking, and rental incomes — while performing **data analysis to generate valuable business insights**.
+It manages books, members, employees, branches, issue/return tracking, and rental incomes, while performing **data analysis to generate valuable business insights**.
 
 ---
 
