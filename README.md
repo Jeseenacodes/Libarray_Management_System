@@ -1,7 +1,7 @@
 [![Data Analytics Trainee](https://img.shields.io/badge/Data_Analytics-Trainee-orange)](https://www.coursera.org/professional-certificates/google-data-analytics)
 [![SQL](https://img.shields.io/badge/SQL-PostgreSQL-blue)](https://www.postgresql.org/)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/status-Completed-success)]()
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-Completed-success)]()
 
 A **Library Management System** built entirely with **SQL** to simulate and analyze library operations.  
 It manages books, members, employees, branches, issue/return tracking, and rental incomes, while performing **data analysis to generate valuable business insights**.
